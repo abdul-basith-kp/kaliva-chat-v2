@@ -4,3 +4,6 @@ class ApplicationError(Exception):
 
 class DatabaseConnectionError(ApplicationError):
     pass
+
+class ValidationError(ApplicationError):
+    pass
