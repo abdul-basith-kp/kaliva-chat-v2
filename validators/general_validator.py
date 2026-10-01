@@ -8,7 +8,7 @@ class GeneralValidator:
 
     def validate_blank_input(self, **inputs) -> None:
         for key, value in inputs:
-            if not value:
+            if not value.strip():
                 raise ValidationError(f"{key} cannot be blank")
 
     def validate_ids(self, **ids) -> None:
